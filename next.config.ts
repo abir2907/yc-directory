@@ -21,6 +21,14 @@ const nextConfig: NextConfig = {
     buildActivity: true,
     buildActivityPosition: "bottom-right",
   },
+  async rewrites() {
+    return [
+      {
+        source: "/api/auth/:path*",
+        destination: "/api/auth/:path*",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
