@@ -29,6 +29,9 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  env: {
+    NEXTAUTH_URL: process.env.NEXTAUTH_URL, // Pass the environment variable
+  },
 };
 
 export default nextConfig;
